@@ -1,0 +1,12 @@
+<section class="track-item" >
+    <div class="track-img" fxLayout="column" fxFlex="20%">
+        <img src="http://placekitten.com/20/20" >
+    </div>
+    <div class="track-details" fxLayout="column" fxFlex="60%">
+        <div><a href="{{track.url}}">{{track.name}}</a></div>
+        <div>Artist: Artist</div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center" fxFlex="20%">
+        <button type="button" mat-button color="primary" (click)="onAddTrack(track)">Add</button>
+    </div>
+</section>

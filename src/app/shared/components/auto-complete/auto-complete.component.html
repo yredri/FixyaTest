@@ -1,0 +1,16 @@
+<form class="auto-complete-form">
+    <mat-form-field class="full-width">
+      <input type="text"
+             placeholder="Search For Track..."
+             aria-label="Number"
+             matInput
+             [formControl]="myControl"
+             (keyup)="onKeypressEvent($event)">
+    </mat-form-field>
+  </form>
+
+  <div>
+      <div *ngFor="let option of options">
+            <app-track-item [track]="option"></app-track-item>
+      </div>
+  </div>
