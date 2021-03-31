@@ -5,7 +5,7 @@
     
         <ng-container matColumnDef="img" >
             <mat-header-cell *matHeaderCellDef mat-sort-header>Img</mat-header-cell>
-            <mat-cell *matCellDef="let element" ><img src="https://picsum.photos/50/50" ></mat-cell>
+            <mat-cell *matCellDef="let element" ><img src="{{element.image}}" ></mat-cell>
         </ng-container>
     
         <ng-container matColumnDef="name" >

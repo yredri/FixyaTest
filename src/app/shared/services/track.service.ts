@@ -30,7 +30,7 @@ export class TrackService{
                         url: tr.url,
                         steamable: tr.steamable,
                         listeners: tr.listeners,
-                        image: tr.image[0].text,
+                        image: tr.image[0]['#text'],
                         mbid: tr.mbid
                     };
                     return track;
